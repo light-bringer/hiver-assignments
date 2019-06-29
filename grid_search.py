@@ -40,19 +40,37 @@ def search_in_grid(arr, combination):
                     return False
     return False
 
-# the map we need to search
-arr = [
-    [1, 1, 2, 3, 4, 1, 1],
-    [1, 1, 5, 6, 7, 1, 1],
-    [1, 1, 2, 7, 4, 1, 1],
-    [1, 1, 7, 8, 6, 1, 1]
-]
 
-# the combination we need to find
-pattern = [
-    [2, 5, 12, 7],
-    [3, 6, 7, 8],
-    [4, 7, 4, 6]
-]
+def main():
+    # the map we need to search
+    arr = [
+        [1, 1, 2, 3, 4, 1, 1],
+        [1, 1, 5, 6, 7, 1, 1],
+        [1, 1, 2, 7, 4, 1, 1],
+        [1, 1, 7, 8, 6, 1, 1]
+    ]
+    # the combination we need to find
+    pattern = [
+        [2, 5, 1, 7],
+        [3, 6, 7, 8],
+        [4, 7, 4, 6]
+    ]
+    print(search_in_grid(arr, pattern))
 
-print(search_in_grid(arr, pattern))
+def test():
+    arr = [
+        [1, 2, 3], 
+        [4, 5, 6 ],
+        [7, 8, 9 ]
+    ]
+    testcases = [
+        [[2, 3],[4, 5],],
+        [[2, 3, 4],[4, 5, 6],],
+        [[2],]
+    ]
+    for pattern in testcases:
+        print(search_in_grid(arr, pattern))
+
+if __name__ == "__main__":
+    test()
+    main()
