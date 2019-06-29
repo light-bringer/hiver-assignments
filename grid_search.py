@@ -1,4 +1,5 @@
 '''
+
 Q. Given a 2D array of digits or grid, try to find the occurrence of a given 2D pattern of digits. For example, consider the following grid: 
 1 2 3 
 4 5 6 
@@ -9,10 +10,11 @@ Assume we need to look for the following 2D pattern in the above grid:
 The 2D pattern begins at the first row and the second column of the grid. The pattern is said to be 
 present in the grid. 
 
-Function Description 
 
-Complete the C function in the editor below. It should return true if the pattern exists in 
-the grid, or false otherwise. 
+** Function Description **
+
+Complete the search_in_grid function in the editor below. It should return true if the pattern exists in the grid, or false otherwise. 
+
 search_in_grid has the following parameter(s): 
 ● the grid to search, an array of strings 
 ● the pattern to search for, an array of strings 
